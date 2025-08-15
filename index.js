@@ -16,40 +16,26 @@ Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**" */
 
 
-let heroi = leon 
-let xpHeroi = 8500 
-let nivelHeroi; 
+let heroi = "leon";
+let xpHeroi = 11000;
+let nivelHeroi;
 
 if (xpHeroi <= 1000) {
     nivelHeroi = "Ferro";
-}
-
-else if (xpHeroi > 1000 && xpHeroi < 2000){
+} else if (xpHeroi >= 1001 && xpHeroi <= 2000) {
     nivelHeroi = "Bronze";
-}
-
-else if (xpHeroi > 2000 && xpHeroi < 5000){
+} else if (xpHeroi >= 2001 && xpHeroi <= 5000) {
     nivelHeroi = "Prata";
-}
-
-else if (xpHeroi > 5000 && xpHeroi < 7000){
+} else if (xpHeroi >= 5001 && xpHeroi <= 7000) {
     nivelHeroi = "Ouro";
-}
-
-else if (xpHeroi > 7000 && xpHeroi < 8000){
+} else if (xpHeroi >= 7001 && xpHeroi <= 8000) {
     nivelHeroi = "Platina";
-}
-
-else if (xpHeroi > 8000 && xpHeroi < 9000){
+} else if (xpHeroi >= 8001 && xpHeroi <= 9000) {
     nivelHeroi = "Ascendente";
-}
-
-else if (xpHeroi > 9000 && xpHeroi < 10000){
+} else if (xpHeroi >= 9001 && xpHeroi <= 10000) {
     nivelHeroi = "Imortal";
+} else { // Se o XP for maior ou igual a 10001
+    nivelHeroi = "Radiante";
 }
 
-else { nivelHeroi = "Radiante";
-}
-
-console.log("O heroi de nome " + heroi + "está no nível " + nivelHeroi)
-
+console.log("O heroi de nome " + heroi + " está no nível " + nivelHeroi);
